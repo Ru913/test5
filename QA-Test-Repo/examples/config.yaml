@@ -1,0 +1,22 @@
+# Azure Virtual Desktop Configuration Example
+
+# Azure Subscription Details
+subscription_id: "your-subscription-id-here"
+resource_group: "your-resource-group-name"
+
+# Azure Authentication (Optional - can use environment variables instead)
+tenant_id: "your-tenant-id-here"
+client_id: "your-client-id-here"
+client_secret: "your-client-secret-here"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "logs/avd_manager.log"
+
+# Host Pool Settings
+host_pools:
+  - name: "production-pool"
+    region: "eastus"
+  - name: "development-pool"
+    region: "westus"
